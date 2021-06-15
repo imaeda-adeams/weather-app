@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 const Form = () => {
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState<string>("");
   return (
     <form>
       <input type="text" name="city" placeholder="都市" onChange={e => setCity(e.target.value)}/>
